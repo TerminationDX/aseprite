@@ -71,3 +71,5 @@ jobs:
         export ASEPRITE=$PWD/build/bin/aseprite
         cd tests
         $XVFB bash run-tests.sh
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v3
